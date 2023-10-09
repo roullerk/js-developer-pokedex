@@ -4,21 +4,37 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-color: lavender;
 }
 
 .content {
-    width: 100vw;
-    height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+    max-width: 70%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
     .content {
-        max-width: 992px;
+        max-width: 992;
         height: auto;
         margin: 1rem auto;
         border-radius: 1rem;
     }
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992;
+        height: auto;
+        margin: 1rem auto;
+        background-color: #fff;
+    }
+}
+
+.content h1 {
+    margin: 0;
+    text-align: center;
+    color: #6c79db
 }
